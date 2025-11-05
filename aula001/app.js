@@ -84,21 +84,45 @@ console.log(typeof fumante)
 /*
 Operadores de atribuição em JavaScript servem para armazenar ou atualizar valores em variáveis, como =, +=, -=, *=, /=.
 */
-
+salario = 2500
 
 //     Operadores aritméticos
 /*
 Operadores aritméticos em JavaScript servem para realizar cálculos com números, como +, -, *, / e %.
 */
-
+let n1 = 10, n2 = 5
+console.log(n1 + n2) // soma
+console.log(n1 - n2) // subtração
+console.log(n1 * n2) // multiplicação
+console.log(n1 / n2) // divisão
+console.log(10 % 2)
 
 //     Operadores relacionais
 /*
 Operadores relacionais em JavaScript comparam valores e retornam true ou false, como ==, ===, !=, >, <, >=, <=.
 */
+console.log(n1 == n2)
+console.log(n1 != n2)
+console.log(n1 > n2)
+console.log(n1 < n2)
+console.log(n1 >= n2)
+console.log(n1 <= n2)
 
+//     Operadores lógicos ! - não / not || - ou / OR && - e / AND
 
-//     Operadores lógicos
+let altura = 1.80
+let peso = 80
+let tipo = "criança"
+console.log(altura > 2)
+console.log(peso < 100)
+
+// muda o resultado final, se for verdadeiro vira falso e se for falso vira verdadeiro
+console.log(!10>5)
+// com || apenas uma verificação precisa ser verdadeira
+console.log(altura > 1.5 || peso < 150 || tipo!= "criança")
+// com && todas as verificações devem ser verdadieras para o resultado final ser verdadeiro.
+console.log(altura > 1.5 && peso < 150 || tipo!= "criança")
+
 /*
 Operadores lógicos em JavaScript combinam condições e retornam true ou false, como && (E), || (OU) e ! (NÃO).
 */
@@ -106,10 +130,29 @@ Operadores lógicos em JavaScript combinam condições e retornam true ou false,
 
 // Estrutura
 //     Estrutura de controle/decisão
+
+if(altura > 1.50){
+    console.log("Pode brincar!")
+}else{
+    console.log("Você não pode brincar!")
+}
+//outro exemplo:
+let carro =  "fiat"
+
+if(carro == "bmw)"){
+    console.log("vc ta bem mais ou menos") //verdadeiro
+}else{
+    console.log("A vida ta progredindo") //falso
+}
 /*
 Estruturas de controle/decisão em JavaScript permitem executar código dependendo de condições, como if, else if, else e switch.
 */
-
+let idadealuno = 20
+if(idadealuno >= 18 ){
+    console.log("maior de idade")
+}else{
+    console.log("menor de idade")
+}
 
 //     Laços de repetição
 /*
