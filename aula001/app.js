@@ -158,15 +158,44 @@ if(idadealuno >= 18 ){
 /*
 Laços de repetição em JavaScript executam um bloco de código várias vezes, como for, while e do...while.
 */
+let controle = 1
+while(controle <=10){
+    console.log(controle)
+    controle = controle + 1
+}
 
-
+controle = 1
+while(controle <= 10){
+    console.log(7*controle)
+    controle = controle+1
+}
 // Arrays --> vetor
 /*
 Arrays (ou vetores) em JavaScript são listas que armazenam múltiplos valores em uma única variável.
 */
+let zoologico = ['leão', 'elefante', 'zebra', 'ariranha', 'lobo guará', 'arara']
+console.log(zoologico[2])
+console.log(zoologico.length)
 
+let frutas = ['🍓','🍊','🍍','🍐','🍌','🍇','🍉']
+console.log(frutas)
+frutas.push('🍎')
+console.log(frutas)
+
+let alunos = []
+alunos.push("joão")
+alunos.push("renata")
+alunos.push("roberto")
+console.log(alunos)
 
 // Funções personalizadas
 /*
 Funções personalizadas em JavaScript são blocos de código que realizam tarefas específicas e podem ser reutilizados várias vezes.
  */
+function mensagem(){
+    console.log("Olá")
+    console.log("Seja bem vindo")
+    console.log(":)")
+}
+mensagem()
+mensagem()
