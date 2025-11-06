@@ -199,3 +199,16 @@ function mensagem(){
 }
 mensagem()
 mensagem()
+
+function conta(n1, n2){
+    console.log(n1 + n2 * 4)
+
+}
+conta(7,5)
+conta(1,2)
+
+
+function conta(horas, sal_hora){
+    console.log(horas*sal_hora)
+}
+conta(140,75)
