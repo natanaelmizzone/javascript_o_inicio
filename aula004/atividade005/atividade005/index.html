@@ -1,0 +1,42 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Links -->
+    <link rel="stylesheet" href="style.css">
+    <title>Pokedex</title>
+</head>
+<body>
+    
+    <main>
+        
+        <img src="#" 
+        alt="pokemon" 
+        class="pokemon_image" id="pokemon_foto">
+            
+        <h1 class="pokemon_data">
+            <span class="pokemon_number" id="pokemon_numero"></span> -
+            <span class="pokemon_name" id="pokemon_nome"></span>
+        </h1>
+
+        <form>
+            <input type="search" class="input_search" placeholder="Número"
+            id="pokemon_procurado" required onkeyup="fnPesquisarNumero()">
+        </form>
+
+        <div class="buttons">
+            <button class="button btn-prev" onclick="fnAnterior()">&lt; Anterior</button>
+            <button class="button btn-next" onclick="fnProximo()">Próximo &gt;</button>
+        </div>
+        
+
+        <img src="img/pokedex.png" alt="pokedex" class="pokedex">
+
+    </main>
+    <div class="audio">
+        <audio autoplay controls src="./pokemon-theme-song-original2.mp3"></audio>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
